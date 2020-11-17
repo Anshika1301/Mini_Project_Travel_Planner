@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+
+    <!------bootstrap link----->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!---------google fonts link roboto, bangers, abel, coiny and lexend deca---------->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bangers&family=Coiny&family=Lexend+Deca&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!------------------- CSS Link -------------->
+    <link rel="stylesheet" href="demofinal.css">
+
+    <!-------------- footer section css link ----------->
+    <link rel="stylesheet" href="footer/footer.css">
+
+    <!-------animation link------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!---------font awesome link------------>
+    <script src="https://kit.fontawesome.com/ccb780018f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <!------------------------- nab bar section ----------------------->
+
+        <nav class="header">
+        
+            <img src="img/globe1.png" alt="travel planner image">
+            <h1>TRAVEL PLANNER</h1>
+        
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+
+                <li><a onclick="drop1()" id="clicks1" href="#">Destinations<i class="fas fa-caret-down"></i></a>
+                <ul id="content1" class="submenu">
+                    <li><a href="#">Foreign</a></li>
+                    <li><a href="#">India</a></li>
+                </ul>
+                </li>
+
+                <li><a onclick="drop2()" id="clicks2" href="#">Adventures<i class="fas fa-caret-down icon1 second"></i></a>
+                    <ul id="content2" class="submenu">
+                        <li><a href="#">Trekking Trip</a></li>
+                        <li><a href="#">Scuba Diving</a></li>
+                        <li><a href="#">River Rafting</a></li>
+                        <li><a href="#">Jungle Safari</a></li>
+                        <li><a href="#">Hicking Trip</a></li>
+                        <li><a href="#">Road Cycling</a></li>
+                        <li><a href="#">Peak Climbing</a></li>
+                        <li><a href="#">Bike Trip</a></li>
+                        <li><a href="#">Rock Climbing</a></li>
+                        <li><a href="#">Rafting</a></li>
+                    </ul>
+                </li>
+
+                <li><a onclick="drop3()" id="clicks3" href="#">Trip Types<i class="fas fa-caret-down icon2"></i></a>
+                    <ul id="content3" class="submenu">
+                        <li><a href="#">Child Friendly</a></li>
+                        <li><a href="#">Cultural Trip</a></li>
+                        <li><a href="#">Nature Walk</a></li>
+                        <li><a href="#">Weekend Trip</a></li>
+                        <li><a href="#">Home Stay</a></li>
+                        <li><a href="#">Volunteer Trip</a></li>
+                        <li><a href="#">Ecotourism</a></li>
+                        <li><a href="#">City Trip</a></li>
+                        <li><a href="#">Group Trip</a></li>
+                        <li><a href="#">Business Travel</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <label for="chk" class="hide-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+
+
+
+
+
+
+        <!------------------- slider section ------------------------>
+
+        <section class="container-fluid slide">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/Foreign_Images/USA/3  Chicago/chicago.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h2 class="animated zoomIn delay-1s text">ENJOY YOUR DREAM VACATION</h2>
+                            <h3 class="sub-main-head">Travel to the any corner of the world.</h3>
+                            <div class="container box">
+                                <div class="row">
+                                    <div class="col-lg-3 column set-box">
+                                        <h3><i class="fas fa-map-marker-alt icon"></i>Destination</h3> 
+                                        <input type="text" class="home-input-text-edit text-center" name="address" placeholder="where are you going?">
+                                    </div>
+                                    <div class="col-lg-3 column set-box">
+                                        <h3 class="text-center"><i class="far fa-calendar-alt icon"></i>Check it-out</h3>
+                                        <input type="date" class="home-input-text-edit text-center" name="date" placeholder="dd-mm-yyyy">
+                                    </div>
+                                    <div class="col-lg-3 column icon set-box">
+                                        <h3><i class="fas fa-user-plus icon"></i>Guests</h3>                                    
+                                        <input type="number" class="home-input-text-edit text-center" name="text" placeholder="no. of guests" min="1">                                 
+                                    </div>
+                                    <div class="col-lg-2  home-search-body">
+                                        <span>   
+                                         <button type="button" class="btn btn-success home-search-btn"><i class="fas fa-search fa-1x"></i>Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Foreign_Images/USA/4  Washington/washington.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInLeft delay-1s text">The best places in the budget</h2>
+                            <h3 class="sub-main-head">Travel to the any corner of the world.</h3>
+                            <div class="container box">
+                                <div class="row">
+                                    <div class="col-lg-3 column set-box">
+                                        <h3><i class="fas fa-map-marker-alt icon"></i>Destination</h3> 
+                                        <input type="text" class="home-input-text-edit text-center" name="address" placeholder="where are you going?">
+                                    </div>
+                                    <div class="col-lg-3 column set-box">
+                                        <h3 class="text-center"><i class="far fa-calendar-alt icon"></i>Check it-out</h3>
+                                        <input type="date" class="home-input-text-edit text-center" name="date" placeholder="dd-mm-yyyy">
+                                    </div>
+                                    <div class="col-lg-3 column icon set-box">
+                                        <h3><i class="fas fa-user-plus icon"></i>Guests</h3>                                    
+                                        <input type="number" class="home-input-text-edit text-center" name="text" placeholder="no. of guests" min="1">                                 
+                                    </div>
+                                    <div class="col-lg-2  home-search-body">
+                                        <span>   
+                                         <button type="button" class="btn btn-success home-search-btn"><i class="fas fa-search fa-1x"></i>Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Foreign_Images/USA/3  Chicago/Shedd Aquarium.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h2 class="animated zoomIn delay-1s text">Try New & Exciting things</h2>
+                            <h3 class="sub-main-head">Travel to the any corner of the world.</h3>
+                            <div class="container box">
+                                <div class="row">
+                                    <div class="col-lg-3 column set-box">
+                                        <h3><i class="fas fa-map-marker-alt icon"></i>Destination</h3> 
+                                        <input type="text" class="home-input-text-edit text-center" name="address" placeholder="where are you going?">
+                                    </div>
+                                    <div class="col-lg-3 column set-box">
+                                        <h3 class="text-center"><i class="far fa-calendar-alt icon"></i>Check it-out</h3>
+                                        <input type="date" class="home-input-text-edit text-center" name="date" placeholder="dd-mm-yyyy">
+                                    </div>
+                                    <div class="col-lg-3 column icon set-box">
+                                        <h3><i class="fas fa-user-plus icon"></i>Guests</h3>                                    
+                                        <input type="number" class="home-input-text-edit text-center" name="text" placeholder="no. of guests" min="1">                                 
+                                    </div>
+                                    <div class="col-lg-2  home-search-body">
+                                        <span>   
+                                         <button type="button" class="btn btn-success home-search-btn"><i class="fas fa-search fa-1x"></i>Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+
+                   <div class="carousel-item">
+                        <img class="d-block w-100" src="img/India/Goa/Galgibaga Beach.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h2 class="animated zoomIn delay-1s text">Something special in the air</h2>
+                            <h3 class="sub-main-head">Travel to the any corner of the world.</h3>
+                            <div class="container box">
+                                <div class="row">
+                                    <div class="col-lg-3 column set-box">
+                                        <h3><i class="fas fa-map-marker-alt icon"></i>Destination</h3> 
+                                        <input type="text" class="home-input-text-edit text-center" name="address" placeholder="where are you going?">
+                                    </div>
+                                    <div class="col-lg-3 column set-box">
+                                        <h3 class="text-center"><i class="far fa-calendar-alt icon"></i>Check it-out</h3>
+                                        <input type="date" class="home-input-text-edit text-center" name="date" placeholder="dd-mm-yyyy">
+                                    </div>
+                                    <div class="col-lg-3 column icon set-box">
+                                        <h3><i class="fas fa-user-plus icon"></i>Guests</h3>                                    
+                                        <input type="number" class="home-input-text-edit text-center" name="text" placeholder="no. of guests" min="1">                                 
+                                    </div>
+                                    <div class="col-lg-2  home-search-body">
+                                        <span>   
+                                         <button type="button" class="btn btn-success home-search-btn"><i class="fas fa-search fa-1x"></i>Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Trip_Type_Images/Child Friendly Trips/DUBAI.jpg" alt="Sixth slide">
+                        <div class="carousel-caption">
+                            <h2 class="animated lightSpeedIn delay-1s text">Your dream destination</h2>
+                            <h3 class="sub-main-head">Travel to the any corner of the world.</h3>
+                            <div class="container box">
+                                <div class="row">
+                                    <div class="col-lg-3 column set-box">
+                                        <h3><i class="fas fa-map-marker-alt icon"></i>Destination</h3> 
+                                        <input type="text" class="home-input-text-edit text-center" name="address" placeholder="where are you going?">
+                                    </div>
+                                    <div class="col-lg-3 column set-box">
+                                        <h3 class="text-center"><i class="far fa-calendar-alt icon"></i>Check it-out</h3>
+                                        <input type="date" class="home-input-text-edit text-center" name="date" placeholder="dd-mm-yyyy">
+                                    </div>
+                                    <div class="col-lg-3 column icon set-box">
+                                        <h3><i class="fas fa-user-plus icon"></i>Guests</h3>                                    
+                                        <input type="number" class="home-input-text-edit text-center" name="text" placeholder="no. of guests" min="1">                                 
+                                    </div>
+                                    <div class="col-lg-2  home-search-body">
+                                        <span>   
+                                         <button type="button" class="btn btn-success home-search-btn"><i class="fas fa-search fa-1x"></i>Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Trip_Type_Images/Child Friendly Trips/Disneyland paris.jpg" alt="Seventh slide">
+                        <div class="carousel-caption">
+                            <h2 class="animated lightSpeedIn delay-1s text">The happiest place on earth.</h2>
+                            <h3 class="sub-main-head">Travel to the any corner of the world.</h3>
+                            <div class="container box">
+                                <div class="row">
+                                    <div class="col-lg-3 column set-box">
+                                        <h3><i class="fas fa-map-marker-alt icon"></i>Destination</h3> 
+                                        <input type="text" class="home-input-text-edit text-center" name="address" placeholder="where are you going?">
+                                    </div>
+                                    <div class="col-lg-3 column set-box">
+                                        <h3 class="text-center"><i class="far fa-calendar-alt icon"></i>Check it-out</h3>
+                                        <input type="date" class="home-input-text-edit text-center" name="date" placeholder="dd-mm-yyyy">
+                                    </div>
+                                    <div class="col-lg-3 column icon set-box">
+                                        <h3><i class="fas fa-user-plus icon"></i>Guests</h3>                                    
+                                        <input type="number" class="home-input-text-edit text-center" name="text" placeholder="no. of guests" min="1">                                 
+                                    </div>
+                                    <div class="col-lg-2  home-search-body">
+                                        <span>   
+                                         <button type="button" class="btn btn-success home-search-btn"><i class="fas fa-search fa-1x"></i>Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Adventures_Images/River Rafting/PACUARE RIVER, COSTA RICA.jpg" alt="Tenth slide">
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInLeft delay-1s text">Experience the excitement!</h2>
+                            <h3 class="sub-main-head">Travel to the any corner of the world.</h3>
+                            <div class="container box">
+                                <div class="row">
+                                    <div class="col-lg-3 column set-box">
+                                        <h3><i class="fas fa-map-marker-alt icon"></i>Destination</h3> 
+                                        <input type="text" class="home-input-text-edit text-center" name="address" placeholder="where are you going?">
+                                    </div>
+                                    <div class="col-lg-3 column set-box">
+                                        <h3 class="text-center"><i class="far fa-calendar-alt icon"></i>Check it-out</h3>
+                                        <input type="date" class="home-input-text-edit text-center" name="date" placeholder="dd-mm-yyyy">
+                                    </div>
+                                    <div class="col-lg-3 column icon set-box">
+                                        <h3><i class="fas fa-user-plus icon"></i>Guests</h3>                                    
+                                        <input type="number" class="home-input-text-edit text-center" name="text" placeholder="no. of guests" min="1">                                 
+                                    </div>
+                                    <div class="col-lg-2  home-search-body">
+                                        <span>   
+                                         <button type="button" class="btn btn-success home-search-btn"><i class="fas fa-search fa-1x"></i>Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!------------------------- footer section----------------------->
+
+        <footer class="container-fluid">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+                            <h2>Popular cities</h2>
+                            <ul>
+                                <li><a href="#">Berlin</a></li>
+                                <li><a href="#">Newyork</a></li>
+                                <li><a href="#">Agra</a></li>
+                                <li><a href="#">London</a></li>
+                                <li><a href="#">HongKong</a></li>
+                                <li><a href="#">Jaisalmer</a></li>
+                                <li><a href="#">Manchester</a></li>
+                                <li><a href="#">Mumbai</a></li>
+                                <li><a href="#">Manali</a></li>
+                                <li><a href="#">Paris</a></li>
+                                <li><a href="#">Rome</a></li>
+                                <li><a href="#">more</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Destinations</a></li>
+                                <li><a href="#">Trips Types</a></li>
+                                <li><a href="#">Adventures</a></li>
+                                <li><a href="footer/contact1.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
+                            <h2>Follow us</h2>
+                            <p>Follow us on social media in order to keep updated</p>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
+                            <h2>Our Newsletter</h2>
+                            <p>Subscribe our newsletter to get every minute offers straight into your inbox. </p>
+                            <form action="">
+                                <input type="email">
+                                <button type="button" class="btn btn-danger subs-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom-text">All right reserved by &copy; TravelPlanner.2020</p>
+        </footer>
+
+
+
+
+
+        <!----bootstrap js link------>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!---------- Navbar js link -------------->
+        <script src="finaljs.js"></script>
+</body>
+</html>
