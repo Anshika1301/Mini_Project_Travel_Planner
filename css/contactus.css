@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;  
+    font-family: sans-serif;
+   }  
+   
+/* --------------------------- contact --------------------------------- */
+
+.contact{
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clear: both;
+  margin-bottom: 1px;
+ 
+}
+
+.contact h1{
+  font-family: 'Kaushan Script', cursive;;
+  font-size: 3em;
+  color: rgb(49, 37, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.contact h2{
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  color: rgb(17, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  }
+
+#contact-section{
+  background: #67B26F;  
+  background: -webkit-linear-gradient(to left, #67B26F, #1976bc); 
+  background: linear-gradient(to right,, #67B26F,  #1976bc);
+  height: 100%;
+  width: 100% ;
+  padding-bottom: 2%;
+  }
+
+
+.contact-form i.fa{
+  font-size: 22px; 
+  padding: 3%;
+  background-color: none;
+  border-radius: 80%;
+  margin: 2%;
+  cursor: pointer;
+  border:2px solid white;
+  color: white
+}
+    
+.contact-form i:hover.fa{
+  cursor: pointer;
+  border:2px solid cyan;
+  color: cyan;
+}
+     
+.contact-form{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 80px;
+}
+      
+.form-info{
+  font-size: 16px;
+  font-style: italic;
+  color:white;
+  letter-spacing: 2px;
+}
+
+input{
+  padding: 10px;
+  margin:10px;
+  width: 70%;
+  background-color:rgb(176, 245, 176);
+  color: black;
+  border: none;
+  outline:none;
+}
+
+input::placeholder{
+  color: black;
+}
+    
+textarea{
+  padding: 10px;
+  margin: 10px;     
+  width: 70%;
+  background-color:rgb(176, 245, 176);
+  border: none;
+  outline:none;
+}
+
+textarea::placeholder{
+  color: black;
+}
+        
+.submit{
+  width: 40%;
+  background: none;
+  padding: 4px;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  border:2px solid black;
+  color: rgb(0, 0, 0);
+}
+
+.submit:hover{
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+  #contact-section .contact-form{
+    height: 120vh;
+    display: block;
+    width: 100%;
+    padding:0 20px;
+    /*text-align: center; */
+  }
+
+  #contact-section .submit{
+    width: 60%;
+  }
+}

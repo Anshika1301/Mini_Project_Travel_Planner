@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');            
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#div1
+{
+  width: 100%;
+  height: auto;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  position: relative;
+  background-image: linear-gradient(to right, rgb(248, 248, 171, 0.7), rgb(176, 176, 252, 0.7)),url(../img/nature.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#div1 a{
+    font-size: 2rem;;
+}
+
+#div1 h1{
+    font-size: 5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#div1 h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.heading_travel{
+    font-size: 4.5rem;
+    font-family: 'Satisfy', cursive;
+}
+ /* 
+.container{
+    padding-left: 5%;
+    margin: 6%;
+    overflow: hidden;
+    height: auto;
+}
+
+.carousel-cell{
+    width: 50%;
+    height: auto;
+    
+}
+.carousel-cell::before{
+    display: block;
+}
+ 
+*/
+.container{
+    max-width:1140px;
+    margin:auto;
+    position: relative;
+    min-height: 1px;
+}
+
+.team{
+    min-height: 100vh;
+    padding:60px 15px;
+    float: left;
+    width: 100%;
+}
+.team h1{
+    font-size: 4.5rem;
+    font-family: 'Satisfy', cursive;
+    color: black;
+    margin:0;
+    text-align: center;
+    margin-top: 1%;
+}
+.team .card{
+    width:25%;
+    float: left;
+    padding:0px 15px;
+}
+
+.team .card .box {
+    padding:15px;
+    background: #67B26F;  
+    background: -webkit-linear-gradient(to left, #84bde9, #95dd9c); 
+    background: linear-gradient(to left, #84bde9, #95dd9c);
+    border-radius:5px;
+    transition: margin 1s ease,box-shadow 1s ease;
+}
+.team .card .box:hover{
+    /*margin-top:-25px; */
+    box-shadow:0px 0px 50px black; 
+    transform-origin: left top;
+    transform: rotateX(20deg) rotateY(20deg) translateZ(0);
+} 
+
+.team .card .box img{
+    width:150px;
+    display: block;
+    margin:10px auto;
+    border-radius:50%;
+}
+
+.team .card .box h4{
+    font-size: 25px;
+    font-family: 'Acme', sans-serif;
+    margin:20px 0px 10px;
+    color:#fc415a;
+    text-align: center;
+    font-weight: 700;
+}
+
+.team .card .box h5{
+    font-size:20px;
+    letter-spacing: .5px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+    color: rgb(21, 21, 70);
+    margin:0px 0px 15px;
+    text-align: center;
+}
+.team .card .box p{
+    color: black;
+    font-size: 15px;
+    font-family: open sans;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding:0px 20px;
+}
+
+@media screen and(max-width: 220px){
+    .carousel-cell{
+        max-width: 49.99999%; 
+        margin: 6px 0;
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+    }
+ }
+
+ @media screen and(max-width: 110px) {
+     .carousel-cell{
+         width:100%;
+     }
+     
+ }
+
+@media screen and(max-width: 768px){
+    .box{
+        width: 100%;
+    }
+}
+
+@media(max-width: 991px){
+    .team .card{
+        width:50%;
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width:584px){
+    .team .card{
+        width:90%;
+        margin-left: 25px;
+    }
+    #div1 h1{
+        font-size: 3.9rem;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .heading_travel{
+        font-size: 3.6rem;
+        font-family: 'Satisfy', cursive;
+    }
+
+    .team h1{
+        font-size: 3.6rem;
+        font-family: 'Satisfy', cursive;
+        color: black;
+        margin:0;
+        text-align: center;
+    }
+}

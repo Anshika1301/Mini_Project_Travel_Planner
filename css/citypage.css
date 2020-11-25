@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+summary{
+  outline: none;
+}
+
+.about-us{
+	 width: 100%;
+	height:300px; 
+    margin-bottom: 3rem; 
+    padding-top: 7%;
+    padding-bottom: 7%;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(248, 248, 171, 0.4), rgb(176, 176, 252, 0.4)),url('../img/Yarada_Beach_Panoramic_Views.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.about-us.deepshadow h1{
+	background-color: rgba(0,0,0,0.2);
+	font-family: 'Russo One', sans-serif;
+	font-size: 3.5em;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-style: italic;
+    color: whitesmoke;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  transition:all 0.5s ease-in-out 0.2s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+.about_state h4{
+	font-family: 'Oleo Script', cursive;
+	letter-spacing: 1px;
+  border-bottom: 2px black solid;
+  font-size: 1.7rem;
+	
+}
+
+.about_state p{
+	text-align: justify;
+}
+
+#content1{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: none;
+}
+
+#show1{
+	cursor: pointer;
+}
+
+#content2{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: none;
+}
+
+.show2{
+	cursor: pointer;
+}
+
+span.sub_t{
+  font-weight: bold;
+}
+
+.bttv{
+  color: grey;
+  margin-top: 0.6rem;
+  margin-left: 1rem;
+}
+
+/* ------------------- You Might Also Like section -------------------*/
+.box-like
+{
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card{
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.card:hover{
+  height: 470px;
+  box-shadow: 25px 25px 30px rgba(0,0,0,0.2);
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text{
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.card .top-text p{
+  font-size: 25px;
+  font-weight: 600;
+  color:darkgreen;
+  line-height: 10px;
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+.card .bottom-text{
+  padding: 0 20px 0px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+.card .bottom-text .btn{
+  margin: 10px 0 0;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .bottom-text .btn a{
+  text-decoration: none;
+  /* background: #e74c3c; */
+  background: linear-gradient(to top,#1976bc 0%,#8dc645 100%);
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+}
+
+.btn-class{
+  margin: 10px 0 0;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  
+}
+.btn-class a{
+  text-decoration: none;
+  /* background: #e74c3c; */
+  background: linear-gradient(to top,#1976bc 0%,#8dc645 100%);
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.btn-class a:hover{
+  transform: scale(0.9);
+}
+
+
+
+@media screen and (max-width: 978px) 
+{
+  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+@media(max-width:860px)
+{
+  .about-us.deepshadow h1{
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width:766px)
+{
+  .state_img{
+    margin-left: 0rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .state_img img{
+    min-width: 100%;
+    min-height: 250px;
+  }
+}
+
+@media(max-width:350px)
+{
+  .about-us.deepshadow h1{
+    font-size: 1rem;
+  }
+  .state_img img{
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+  }
+}
