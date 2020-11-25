@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+summary{
+  outline: none;
+}
+
+.about-us{
+	width: 100%;
+	height:300px; 
+	/* background-image: url('../img/India/Andhra_Pradesh/2_Visakhapatnam/Yarada_Beach_Panoramic_Views.jpg'); */
+  margin-bottom: 3rem; 
+  padding-top: 7%;
+  padding-bottom: 7%;
+  position: relative;
+  background-image: linear-gradient(to right, rgb(248, 248, 171, 0.4), rgb(176, 176, 252, 0.4)),url('../img/background.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.about-us.deepshadow h1{
+	background-color: rgba(0,0,0,0.2);
+	font-family: 'Russo One', sans-serif;
+	font-size: 3.5em;
+  width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  font-style: italic;
+  color: whitesmoke;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  transition:all 0.5s ease-in-out 0.2s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+.about_state h4{
+	font-family: 'Oleo Script', cursive;
+	letter-spacing: 1px;
+  border-bottom: 2px black solid;
+  font-size: 1.7rem;
+	
+}
+
+.about_state p{
+	text-align: justify;
+}
+
+#content1{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: none;
+}
+
+#show1{
+	cursor: pointer;
+}
+
+#content2{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: none;
+}
+
+.show2{
+	cursor: pointer;
+}
+
+span.sub_t{
+  font-weight: bold;
+}
+
+.bttv{
+  color: grey;
+  margin-top: 0.6rem;
+  margin-left: 1rem;
+}
+
+
+
+
+/* -------------------image section------------ */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+.state_img {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: -20px 20px 20px 5px rgba(0, 0, 0, 0.6);
+  margin: 2rem auto;
+}
+
+.state_img img{
+  min-height: 200px;
+  min-width: 250px;
+  max-height: 210px;
+  max-width: 350px;
+}
+
+.state_img:hover img,
+.state_img.hover img {
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+.state_img h2{
+  font-size: 1.3rem;
+  overflow: hidden;
+  font-weight: 900;
+  color: darkgreen;
+}
+
+.state_img * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.heading h2{
+  margin-top: 1.5rem;
+  font-family: 'Oleo Script', cursive;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+	border-bottom: 2px black solid;
+}
+
+/* ------------------- REVIEW -------------------*/
+.center{
+  margin: 2.5rem auto 1.5rem;
+}
+h2.title{
+  font-family: 'Oleo Script', cursive;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+.center .stars{
+  height: 150px;
+  width: 500px;
+  text-align: center;
+}
+.stars input{
+  display: none;
+}
+.stars label{
+  float: right;
+  font-size: 100px;
+  color: lightgrey;
+  margin: 0 5px;
+  text-shadow: 1px 1px #bbb;
+}
+.stars label:before{
+  content: '★';
+}
+.stars input:checked ~ label{
+  color: gold;
+  text-shadow: 1px 1px #c60;
+  
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label{
+  color: gold;
+}
+.stars input:checked > label:hover,
+.stars input:checked > label:hover ~ label{
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.stars .result:before{
+  content: "";
+  width: 100%;
+  transform: translateX(-47%);
+  font-size: 27px;
+  font-weight: 500;
+  color: rgb(134, 119, 29);
+  font-family: 'Poppins', sans-serif;
+  display: none;
+  margin-bottom: 3rem;
+}
+.stars input:checked ~ .result:before{
+  display: block;
+}
+.stars #five:checked ~ .result:before{
+  content: "Its awesome...😍";
+}
+.stars #four:checked ~ .result:before{
+  content: "I love it...😎";
+}
+.stars #three:checked ~ .result:before{
+  content: "It's good...😄";
+}
+.stars #two:checked ~ .result:before{
+  content: "I don't like it...😒";
+}
+.stars #one:checked ~ .result:before{
+  content: "I hate it...😠";
+}
+
+
+/* ------------------- FAQ'S Section -------------------*/
+::selection{
+  background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+}
+.wrapper .parent-tab,
+.wrapper .child-tab{
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+  background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.wrapper .parent-tab label:hover{
+  background: #1976bc;
+  
+}
+.parent-tab input:checked ~ label,
+.child-tab input:checked ~ label{
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+}
+.wrapper label span{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.wrapper .child-tab label span{
+  font-size: 17px;
+}
+.parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #007bff;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.wrapper .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.parent-tab .content p,
+.child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.child-tab .sub-content p{
+  font-size: 15px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+
+/* ------------------- You Might Also Like section -------------------*/
+.box-like
+{
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card{
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.6);
+}
+.card:hover{
+  height: 470px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.6);
+  
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text{
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.card .top-text p{
+  font-size: 25px;
+  font-weight: 600;
+  color:darkgreen;
+  line-height: 10px;
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+.card .bottom-text{
+  padding: 0 20px 0px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+.card .bottom-text .btn{
+  margin: 10px 0 0;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .bottom-text .btn a{
+  text-decoration: none;
+  /* background: #e74c3c; */
+  background: linear-gradient(to top,#1976bc 0%,#8dc645 100%);
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+}
+
+.btn-class{
+  margin: 10px 0 0;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  
+}
+.btn-class a{
+  text-decoration: none;
+  /* background: #e74c3c; */
+  background: linear-gradient(to top,#1976bc 0%,#8dc645 100%);
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.btn-class a:hover{
+  transform: scale(0.9);
+}
+
+
+
+@media screen and (max-width: 978px) 
+{
+  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+@media(max-width:860px)
+{
+  .about-us.deepshadow h1{
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width:766px)
+{
+  .state_img{
+    margin-left: 0rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .state_img img{
+    min-width: 100%;
+    min-height: 250px;
+  }
+}
+
+@media(max-width:350px)
+{
+  .about-us.deepshadow h1{
+    font-size: 1rem;
+  }
+  .state_img img{
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+  }
+}
